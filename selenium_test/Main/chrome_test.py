@@ -42,5 +42,6 @@ driver.get("https://www.google.com")
 driver.maximize_window()
 sleep(5)
 
-driver.find_element_by_name("q").send_keys("LinkedIn Login")
-driver.find_element_by_name("q").send_keys(Keys.ENTER)
+driver.find_element(By.NAME, "q").send_keys("LinkedIn Login")
+driver.find_element(By.NAME, "q").send_keys(Keys.ENTER)
+driver.find_element(By.PARTIAL_LINK_TEXT, "LinkedIn Login").click()
