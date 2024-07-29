@@ -50,3 +50,9 @@ driver.find_element(By.ID, "username").send_keys("enterusername")
 driver.find_element(By.ID, "password").send_keys("enterpassword")
 
 driver.find_element(By.TAG_NAME, "button").click()
+
+print(driver.title)
+
+print(driver.current_url)
+
+driver.close()
